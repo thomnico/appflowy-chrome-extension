@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "AppFlowy Web Clipper (Prototype)",
+  "version": "0.1",
+  "description": "A prototype Chrome extension for clipping web content to AppFlowy.",
+  "permissions": ["activeTab", "storage", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle",
+    "world": "ISOLATED"
+  }],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AppFlowy Web Clipper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AppFlowy Web Clipper (Prototype)</h1>
+    
+    <div class="section">
+      <h2>Page Metadata</h2>
+      <div id="metadata">
+        <p><strong>Title:</strong> <span id="pageTitle">Loading...</span></p>
+        <p><strong>URL:</strong> <span id="pageUrl">Loading...</span></p>
+        <p><strong>Description:</strong> <span id="pageDescription">Loading...</span></p>
+        <p><strong>Author:</strong> <span id="pageAuthor">Loading...</span></p>
+        <p><strong>Date:</strong> <span id="pageDate">Loading...</span></p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Content Preview</h2>
+      <div id="contentPreview" class="preview-box">
+        <p>Loading content preview...</p>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="clipSelection" name="clipSelection">
+        <label for="clipSelection">Clip only selected content</label>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>Destination in AppFlowy</h2>
+      <select id="destination" name="destination">
+        <option value="default">Default Workspace</option>
+        <option value="workspace1">Workspace 1 (Mock)</option>
+        <option value="workspace2">Workspace 2 (Mock)</option>
+      </select>
+    </div>
+    
+    <div class="section">
+      <h2>Annotations</h2>
+      <textarea id="notes" placeholder="Add notes or comments about this clip..."></textarea>
+      <input type="text" id="tags" placeholder="Tags (comma separated)">
+    </div>
+    
+    <div class="button-group">
+      <button id="cancelBtn" class="secondary">Cancel</button>
+      <button id="saveBtn" class="primary">Save to AppFlowy</button>
+    </div>
+    
+    <div id="notification" class="notification hidden"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Styles injected into web pages for AppFlowy Web Clipper */
+/* Currently minimal for prototype, can be expanded for selection highlighting or UI elements */
+
+/* Optional: Add a subtle indicator for the extension's presence */
+body::before {
+  content: "AppFlowy Clipper Active (Prototype)";
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 123, 255, 0.2);
+  color: #333;
+  padding: 2px 5px;
+  font-size: 10px;
+  border-radius: 3px;
+  z-index: 9999;
+  display: none; /* Hidden by default, can be toggled for debugging */
+}
