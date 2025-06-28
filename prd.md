@@ -77,10 +77,10 @@ The user interface and experience must prioritize simplicity and intuitiveness, 
 
 - **Popup Interface**:
   - A compact popup (approximately 400x500 pixels) triggered by the toolbar icon or context menu, displaying:
+    - "Save" and "Cancel" buttons at the top for confirming or discarding the clip.
     - A dropdown or tree view for selecting AppFlowy destination (workspace/page).
     - A preview pane showing clipped content (scrollable for long content) and metadata.
     - Input fields for annotations (notes and tags).
-    - "Save" and "Cancel" buttons for confirming or discarding the clip.
   - Use a clean, modern design with AppFlowy branding (if available) or neutral colors for consistency.
 
 - **Context Menu Access**:
